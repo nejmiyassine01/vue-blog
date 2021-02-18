@@ -1,7 +1,7 @@
 <template>
-  <div class="about">
+  <div class="help">
     <h1 v-font="100">{{ pageName }}</h1>
-    <p>{{ pageDescription }}</p>
+    <p v-format.orange>{{ pageDescription }}</p>
   </div>
 </template>
 
@@ -9,8 +9,8 @@
 export default {
   data: function() {
     return {
-      pageName: "About Us",
-      pageDescription: "This Is About Us Page"
+      pageName: "Help ",
+      pageDescription: "This Is Help Page"
     };
   }
 };
